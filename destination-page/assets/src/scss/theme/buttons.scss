@@ -20,5 +20,13 @@
     }
   }
 
+  &--secondary{
+    background-color: $light-blue;
+    &:hover{
+      background-color: $white;
+      color: $navy;
+    }
+  }
+
 
 }

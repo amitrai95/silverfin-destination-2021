@@ -1,25 +1,119 @@
 [ {
-  "id" : "e30b132b-c193-3081-bdeb-20cfcbd59fd3",
-  "name" : "title",
-  "label" : "Title",
-  "required" : true,
+  "id" : "71caad01-e07a-1597-166a-57de6d610f04",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
   "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Title (H1)",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Technology Trends in Accounting 2021"
+  "children" : [ {
+    "id" : "e30b132b-c193-3081-bdeb-20cfcbd59fd3",
+    "name" : "title",
+    "label" : "Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Title (H1)",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Technology Trends in Accounting 2021"
+  }, {
+    "id" : "1bdeccb4-0881-6535-a9fb-e790feac663f",
+    "name" : "standfirst",
+    "label" : "Standfirst",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Standfirst",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "What headway have firms made in their transformation from bookkeeping to trusted business advisors?"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Technology Trends in Accounting 2021",
+    "standfirst" : "What headway have firms made in their transformation from bookkeeping to trusted business advisors?"
+  }
 }, {
-  "id" : "1bdeccb4-0881-6535-a9fb-e790feac663f",
-  "name" : "standfirst",
-  "label" : "Standfirst",
-  "required" : true,
+  "id" : "653dba4f-4eb1-3ed8-cdbb-4bcea312488f",
+  "name" : "images",
+  "label" : "Images",
+  "required" : false,
   "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Standfirst",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "What headway have firms made in their transformation from bookkeeping to trusted business advisors?"
+  "children" : [ {
+    "id" : "2983f911-1c01-6c07-5143-2c6088730290",
+    "name" : "image",
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 5,
+      "max" : 5,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : [ {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : [ {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }, {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    } ]
+  }
 } ]

@@ -4,6 +4,11 @@
   "icon" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/block-icons/menu.svg",
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 49158808452,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../assets/build/js/lib/scroll-reveal.js",
+    "name" : "scroll-reveal.js"
+  } ],
   "label" : "Destination footer",
   "is_available_for_new_content" : true
 }

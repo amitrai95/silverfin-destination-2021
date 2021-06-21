@@ -1,0 +1,22 @@
+@import "destination-page/assets/src/scss/config.scss";
+
+
+.destCTABanner{
+
+  @include media-breakpoint-up-xl{
+    padding: 175px 0px;
+  }
+
+  &__copy{
+    strong{
+      color: $light-blue;
+    }
+  }
+
+  &__cta{
+    @include media-breakpoint-up-xl{
+      margin-top: 85px;
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+<section class="destHero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-xl-8">
+
+        <div class="destHero__wrapper text-center">
+          <h1 class="destHero__title color--navy mb-0">{{ module.copy.title|trim }}</h1>
+          <p class="destHero__standfirst color--lightGrey display--1 mb-0">{{ module.copy.standfirst|trim }}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="destHero__images d-flex">
+    {% for item in module.images.image %}
+      <div class="destHero__bg destHero__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item.src }});"></div>
+    {% endfor %}
+  </div>
+
+</section>

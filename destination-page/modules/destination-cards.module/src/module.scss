@@ -1,0 +1,10 @@
+@import "destination-page/assets/src/scss/config.scss";
+
+.destCards{
+
+  &__standfirst{
+    max-width: 530px;
+    @include mx-auto;
+  }
+
+}

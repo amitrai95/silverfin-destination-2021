@@ -10,6 +10,14 @@
     color: $white;
   }
 
+  &--navy{
+    color: $navy;
+  }
+
+  &--lightGrey{
+    color: $light-grey;
+  }
+
 }
 
 
@@ -21,6 +29,10 @@
 
   &--white{
     background-color: $white;
+  }
+
+  &--navy{
+    background-color: $navy;
   }
 
   &--cover{
@@ -37,4 +49,8 @@ ul.reset-list{
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.flex-align{
+  @include flex-align;
 }
