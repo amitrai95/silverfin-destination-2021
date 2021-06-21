@@ -1,0 +1,148 @@
+@import "../config.scss";
+
+
+.slick{
+
+  &-next,
+  &-prev{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+
+  &-next{
+    right: 20%;
+  }
+
+  &-prev{
+    left: 20%;
+  }
+
+  &-disabled{
+    opacity: 0.2;
+    display: none!important;
+  }
+
+  &-slide{
+    margin: 0px 10px;
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    outline: none!important;
+    &.slick-loading{
+      display: none;
+    }
+    &.dragging{
+      img{
+        pointer-events: none;
+      }
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+  &-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    @include no-user-select;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+  }
+
+
+  &-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    &:focus{
+      outline: none;
+    }
+    &.dragging{
+      cursor: pointer;
+      cursor: hand;
+    }
+  }
+
+
+  &-track,
+  &-list{
+    transform: translate3d(0, 0, 0);
+  }
+
+
+  &-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    &:before,
+    &:after{
+      display: table;
+      content: '';
+    }
+    &:after{
+      clear: both;
+    }
+  }
+
+  &-initialized{
+    .slick-slide{
+      display: block;
+    }
+  }
+
+  &-dots{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    @include media-breakpoint-up-lg{
+      justify-content: center;
+    }
+
+    li{
+      padding-right: 10px;
+      list-style-type: none;
+    }
+
+    .slick-active button {
+      background-color: black;
+    }
+
+    button{
+      cursor: pointer;
+      display: block;
+      font-size: 0;
+      width: 14px;
+      height: 14px;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: black;
+      color: transparent;
+      outline: none!important;
+    }
+  }
+
+}
+
+
+.slick-initialized{
+  opacity:1;
+  transition:opacity .3s ease-out;
+}

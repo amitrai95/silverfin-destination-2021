@@ -1,0 +1,25 @@
+[ {
+  "id" : "e30b132b-c193-3081-bdeb-20cfcbd59fd3",
+  "name" : "title",
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Title (H1)",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Technology Trends in Accounting 2021"
+}, {
+  "id" : "1bdeccb4-0881-6535-a9fb-e790feac663f",
+  "name" : "standfirst",
+  "label" : "Standfirst",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Standfirst",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What headway have firms made in their transformation from bookkeeping to trusted business advisors?"
+} ]

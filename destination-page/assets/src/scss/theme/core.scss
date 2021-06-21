@@ -1,0 +1,16 @@
+@import "../config.scss";
+
+*{
+  @include box-sizing(border-box);
+  @include cera;
+}
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  @include transition;
+}

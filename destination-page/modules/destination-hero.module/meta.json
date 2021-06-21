@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/block-icons/hero.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 49157898672,
+  "label" : "Destination hero",
+  "is_available_for_new_content" : true
+}

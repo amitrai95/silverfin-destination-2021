@@ -1,0 +1,3 @@
+*.scss
+*.map
+/destination-page/assets/src/**

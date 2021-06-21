@@ -1,0 +1,39 @@
+[ {
+  "id" : "4aacc6bb-8033-50dd-ac18-3a35c8a725d3",
+  "name" : "copy",
+  "label" : "Copy",
+  "inline_help_text" : "To change text color to light blue, select text and make it bold.",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3><strong>Download Technology Trends in Accounting 2021</strong> to see the big picture, compare your firm’s digital capabilities against your peers, and understand how to unlock future success.</h3>"
+}, {
+  "id" : "8cbcb3fc-08cd-ba58-ce5a-22b416578215",
+  "name" : "cta_text",
+  "label" : "CTA text",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "CTA text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Download the Report"
+}, {
+  "id" : "e2dcd67e-df51-8348-1ab5-c8bd54b14bc8",
+  "name" : "cta_link",
+  "label" : "CTA link",
+  "required" : true,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

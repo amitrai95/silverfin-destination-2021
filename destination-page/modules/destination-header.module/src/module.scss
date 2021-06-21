@@ -1,0 +1,16 @@
+@import "destination-page/assets/src/scss/config.scss";
+
+.destHeader{
+  padding: 0px 30px;
+
+  @include media-breakpoint-up-xl{
+    padding: 0px 97.2px 0px 83.7px;
+  }
+
+
+  &__wrapper{
+    @include flex-align($justify: space-between);
+  }
+
+
+}

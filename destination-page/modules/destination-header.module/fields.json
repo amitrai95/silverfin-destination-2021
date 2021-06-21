@@ -1,0 +1,94 @@
+[ {
+  "id" : "bf4f38ae-91f9-a5b7-73d2-fa12e0049f5a",
+  "name" : "branding",
+  "label" : "Branding",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "0505fdf1-da3c-d13a-9d78-a4168a6a22b3",
+    "name" : "logo",
+    "label" : "Logo",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/sliverfin-logo.svg",
+      "alt" : "sliverfin-logo",
+      "loading" : "lazy",
+      "width" : 191,
+      "height" : 37,
+      "max_width" : 191,
+      "max_height" : 37
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/sliverfin-logo.svg",
+      "alt" : "sliverfin-logo",
+      "loading" : "lazy",
+      "width" : 191,
+      "height" : 37,
+      "max_width" : 191,
+      "max_height" : 37
+    }
+  }
+}, {
+  "id" : "d5d16b33-e9c1-c34e-faa0-c683b7b173c7",
+  "name" : "cta_button",
+  "label" : "CTA button",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "3050387d-71a2-2eda-058b-4eb82bbc722c",
+    "name" : "cta_text",
+    "label" : "CTA text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA text",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Download the Report"
+  }, {
+    "id" : "b2dab410-3f13-ff45-c0c9-4238745872d6",
+    "name" : "cta_link",
+    "label" : "CTA link",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta_text" : "Download the Report",
+    "cta_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

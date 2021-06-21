@@ -1,0 +1,40 @@
+@import "../config.scss";
+
+/*
+* COLORS
+*/
+
+.color{
+
+  &--white{
+    color: $white;
+  }
+
+}
+
+
+/*
+* BACKGROUNDS
+*/
+
+.background{
+
+  &--white{
+    background-color: $white;
+  }
+
+  &--cover{
+    @include cover-background;
+  }
+
+}
+
+/*
+* OTHER
+*/
+
+ul.reset-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

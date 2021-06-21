@@ -1,0 +1,43 @@
+<header class="destHeader">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="destHeader__wrapper">
+
+          <div class="destHeader__branding">
+            {% if module.branding.logo.src %}
+            	{% set sizeAttrs = 'width="{{ module.branding.logo.width }}" height="{{ module.branding.logo.height }}"' %}
+            	{% if module.branding.logo.size_type == 'auto' %}
+            		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            	{% elif module.branding.logo.size_type == 'auto_custom_max' %}
+            		{% set sizeAttrs = 'width="{{ module.branding.logo.max_width }}" height="{{ module.branding.logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+            	{% endif %}
+            	 {% set loadingAttr = module.branding.logo.loading != 'disabled' ? 'loading="{{ module.branding.logo.loading }}"' : '' %}
+            	<img class="destHeader__logo" loading="lazy" src="{{ module.branding.logo.src }}" alt="{{ module.branding.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+
+          <div class="destHeader__cta d-flex">
+            {% set href = module.cta_button.cta_link.url.href %}
+            {% if module.cta_button.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+            	{% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if module.cta_button.cta_link.no_follow %}
+            	{% do rel.append("nofollow") %}
+            {% endif %}
+            {% if module.cta_button.cta_link.open_in_new_tab %}
+            	{% do rel.append("noopener") %}
+            {% endif %}
+            <a href="{{ href }}" class="button button--primary"
+            	{% if module.cta_button.cta_link.open_in_new_tab %}target="_blank"{% endif %}
+            	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
+            	{{ module.cta_button.cta_text|trim }}
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
