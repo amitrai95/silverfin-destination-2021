@@ -49,6 +49,11 @@ p{
     @include fluid-line-height(32px, 32px);
   }
 
+  &.display--2{
+    @include fluid-type(18px, 18px);
+    @include fluid-line-height(24px, 24px);
+  }
+
   &:empty{
     display: none;
   }

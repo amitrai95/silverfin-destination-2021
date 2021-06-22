@@ -54,3 +54,7 @@ ul.reset-list{
 .flex-align{
   @include flex-align;
 }
+
+.visibility-hidden{
+  visibility: hidden;
+}

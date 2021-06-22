@@ -8,6 +8,10 @@
     "autoload" : true,
     "path" : "../../assets/build/js/lib/scroll-reveal.js",
     "name" : "scroll-reveal.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../assets/build/js/dist/scripts-min.js",
+    "name" : "scripts-min.js"
   } ],
   "label" : "Destination footer",
   "is_available_for_new_content" : true
