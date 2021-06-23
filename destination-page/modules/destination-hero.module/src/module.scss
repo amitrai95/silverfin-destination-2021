@@ -1,9 +1,10 @@
 @import "destination-page/assets/src/scss/config.scss";
 
 .destHero{
-  padding: 28px 0px 83px 0px;
+  padding: 28px 0px 600px 0px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 83px;
 
   &__standfirst{
     margin-top: 18px;
@@ -11,19 +12,86 @@
     @include mx-auto;
   }
 
+  // svg{
+  //   *{
+  //     opacity: 1;
+  //   }
+  // }
 
-  &__bg{
-    background-repeat: no-repeat;
-    background-size: contain;
+  &__shape--1,
+  &__shape--2,
+  &__shape--3,
+  &__shape--4,
+  &__shape--5{
     visibility: hidden;
-    // position: absolute;
-    // bottom: 0;
-    height: 300px;
-    width: 300px;
-
-    &--1{
-      left: 0;
-    }
+    //opacity: 1!important;
   }
+
+
+  // &__bg{
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   visibility: hidden;
+  //   position: absolute;
+  //   bottom: 0;
+  //
+  //   &--1{
+  //     left: 0;
+  //     @include media-breakpoint-up-xl{
+  //       width: 214px;
+  //       height: 247px;
+  //     }
+  //   }
+  //
+  //   &--2{
+  //     z-index: 1;
+  //     @include media-breakpoint-up-xl{
+  //       left: 174px;
+  //       width: 1085px;
+  //       height: 124px;
+  //       bottom: 123px;
+  //     }
+  //     @include media-breakpoint-up-xxl{
+  //       width: 1400px;
+  //     }
+  //   }
+  //
+  //   &--3{
+  //     @include media-breakpoint-up-xl{
+  //       left: 212px;
+  //       bottom: 175px;
+  //       height: 450px;
+  //       width: 247px;
+  //     }
+  //     @include media-breakpoint-up-xxl{
+  //       background-size: contain;
+  //     }
+  //   }
+  //
+  //   &--4{
+  //     @include media-breakpoint-up-xl{
+  //       bottom: 225px;
+  //       left: 405px;
+  //       width: 546px;
+  //       height: 408px;
+  //     }
+  //     @include media-breakpoint-up-xxl{
+  //       left: 440px;
+  //       bottom: 170px;
+  //     }
+  //   }
+  //
+  //
+  //   &--5{
+  //     @include media-breakpoint-up-xl{
+  //       right: -90px;
+  //       bottom: 180px;
+  //       width: 415px;
+  //       height: 637px;
+  //     }
+  //
+  //   }
+  //
+  // }
 
 }

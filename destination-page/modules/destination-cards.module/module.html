@@ -15,7 +15,7 @@
       <div class="col-12 col-md-10 col-lg-8">
         <div class="destCards__cards">
           {% for item in module.cards.single_card %}
-            <div class="destCards__singleCard destCard destCard--{{ loop.index }}">
+            <div class="destCards__singleCard globalCard destCard destCard--{{ loop.index }}">
               <div class="destCard__header">
                 <img class="destCard__icon" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" loading="lazy">
               </div>

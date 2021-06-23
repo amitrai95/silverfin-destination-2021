@@ -1,1 +1,20 @@
 @import "destination-page/assets/src/scss/config.scss";
+
+
+.destTwoCard{
+
+
+  &__cards{
+    @include flex-align;
+    margin-top: 173px;
+  }
+
+  .destTwoCrd{
+    &--1{
+      @include media-breakpoint-up-xl{
+        margin-right: 140px;
+      }
+    }
+  }
+
+}

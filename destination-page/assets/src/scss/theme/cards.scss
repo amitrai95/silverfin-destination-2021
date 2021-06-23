@@ -1,0 +1,13 @@
+@import "../config.scss";
+
+.globalCard{
+  max-width: 372px;
+  width: 100%;
+  background-color: $white;
+  @include border-radius(40px);
+  box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.16);
+  text-align: center;
+  margin-bottom: 30px;
+  visibility: hidden;
+  padding: 30px 55px;
+}

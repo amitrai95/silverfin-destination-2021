@@ -1,7 +1,25 @@
 <section class="destTwoCard">
   <div class="container">
-    <div class="row">
-      
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-xl-9">
+        <div class="destTwoCard__intro text-center">
+          <h2 class="destTwoCard__header color--navy mb-0">{{ module.header|trim }}</h2>
+        </div>
+      </div>
     </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="destTwoCard__cards">
+          {% for item in module.cards.single_card %}
+            <div class="destTwoCard__singleCard  globalCard destTwoCrd destTwoCrd--{{ loop.index }}">
+              <div class="destTwoCrd__body color--lightGrey">{{ item.copy|trim }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
