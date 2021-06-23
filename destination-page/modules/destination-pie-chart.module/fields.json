@@ -1,0 +1,37 @@
+[ {
+  "id" : "2dfcdb0a-3aec-29a7-896d-d60c0815559e",
+  "name" : "header",
+  "label" : "Header",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Header (H2)",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "It’s Groundhog Day for accounting"
+}, {
+  "id" : "d8d0814b-fb85-1f07-fc7e-57cbd1b5d155",
+  "name" : "standfirst",
+  "label" : "Standfirst",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Standfirst",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Despite 76% of firms stating a desire to shift from bookkeeping to advisory in our last report, those receiving the majority of their income from advisory services remains flat at 14%."
+}, {
+  "id" : "69931d36-f24c-8d7a-f1d5-2ff705ba0b63",
+  "name" : "subheader",
+  "label" : "Subheader",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Subheader",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Where does most of your revenue come from today?"
+} ]

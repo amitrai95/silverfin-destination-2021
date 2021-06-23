@@ -1,0 +1,50 @@
+[ {
+  "id" : "d3335ed3-e53a-5d3a-3e0e-c77d16bbd3a8",
+  "name" : "header",
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Header",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Boosting low-level capabilities is not enough to drive substantial change"
+}, {
+  "id" : "c415d7ed-6a39-2c3b-cf7f-fa88a7b1b960",
+  "name" : "standfirst",
+  "label" : "Standfirst",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Digital data storage (up 16% yoy) and access to live data (up 13% yoy) are on the rise. But just 25% can create automated alerts to offer clients proactive advice. <strong>Acceleration is needed</strong>.</p>"
+}, {
+  "id" : "9bfb6d1c-8f98-8fae-2b34-76314c8e1d20",
+  "name" : "cta_text",
+  "label" : "CTA text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "CTA text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See the whole picture"
+}, {
+  "id" : "a6a8acec-e63f-03ea-f93f-4d82b3994538",
+  "name" : "cta_link",
+  "label" : "CTA link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

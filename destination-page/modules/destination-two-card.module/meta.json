@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/block-icons/two-card.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 49256167353,
+  "label" : "Destination two card",
+  "is_available_for_new_content" : true
+}

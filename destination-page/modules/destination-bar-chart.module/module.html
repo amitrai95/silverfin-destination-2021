@@ -1,0 +1,46 @@
+<section class="destBarChart">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-xl-9">
+        <div class="destBarChart__intro text-center">
+          <h2 class="destBarChart__header color--navy mb-0">{{ module.header|trim }}</h2>
+          <div class="destBarChart__standfirst">{{ module.standfirst }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="destBarChart__graphic flex-align">
+          <img class="destBarChart__chart" src="https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-bar-chart/bar-chart.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="destBarChart__cta flex-align">
+          {% set href = module.cta_link.url.href %}
+          {% if module.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+          	{% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.cta_link.no_follow %}
+          	{% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.cta_link.open_in_new_tab %}
+          	{% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}" class="button button--primary"
+          	{% if module.cta_link.open_in_new_tab %}target="_blank"{% endif %}
+          	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
+          	{{ module.cta_text|trim }}
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

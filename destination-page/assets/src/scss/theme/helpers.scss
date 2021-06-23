@@ -14,6 +14,10 @@
     color: $navy;
   }
 
+  &--lightBlue{
+    color: $light-blue;
+  }
+
   &--lightGrey{
     color: $light-grey;
   }
@@ -33,6 +37,14 @@
 
   &--navy{
     background-color: $navy;
+  }
+
+  &--dullNavy{
+    background-color: $dull-navy;
+  }
+
+  &--blue{
+    background-color: $blue;
   }
 
   &--cover{

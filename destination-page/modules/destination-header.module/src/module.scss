@@ -1,15 +1,25 @@
 @import "destination-page/assets/src/scss/config.scss";
 
 .destHeader{
-  padding: 0px 30px;
+  padding: 20px 15px;
+  @include media-breakpoint-up-sm{
+    padding: 0px 30px;
+  }
 
   @include media-breakpoint-up-xl{
-    padding: 0px 97.2px 0px 83.7px;
+    padding: 0px 83px 0px;
   }
 
 
   &__wrapper{
     @include flex-align($justify: space-between);
+  }
+
+  &__logo{
+    width: 156px;
+    @include media-breakpoint-up-xl{
+      width: 190px;
+    }
   }
 
 

@@ -2,6 +2,7 @@ $sm-screen: 576px;
 $md-screen: 768px;
 $lg-screen: 992px;
 $xl-screen: 1200px;
+$xxl-screen: 1600px;
 
 @mixin media-breakpoint-up-sm {
   @media (min-width: #{$sm-screen}) {
@@ -24,6 +25,12 @@ $xl-screen: 1200px;
 
 @mixin media-breakpoint-up-xl {
   @media (min-width: #{$xl-screen}) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-up-xxl {
+  @media (min-width: #{$xxl-screen}) {
     @content;
   }
 }

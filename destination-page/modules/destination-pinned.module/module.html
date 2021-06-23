@@ -1,0 +1,56 @@
+<section class="destPinned">
+  {% for item in module.slide %}
+    <div class="destPinned__slide destPinned__slide--{{ loop.index }} {% cycle 'background--navy','background--dullNavy','background--blue' %}">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-12 col-md-5">
+            <div class="destPinned__graphic">
+              {% if item.image.image.src %}
+                {% set sizeAttrs = 'width="{{ item.image.image.width }}" height="{{ item.image.image.height }}"' %}
+                {% if item.image.image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.image.image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.image.image.max_width }}" height="{{ item.image.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = item.image.image.loading != 'disabled' ? 'loading="{{ item.image.image.loading }}"' : '' %}
+                <img class="destPinned__image" loading="lazy" src="{{ item.image.image.src }}" alt="{{ item.image.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="destPinned__body">
+              <p class="destPinned__counter color--lightBlue mb-0">0{{ loop.index }}</p>
+              <h2 class="destPinned__header color--white">{{ item.copy.header|trim }}</h2>
+              {% if item.copy.standfirst %}
+                <p class="destPinned__standfirst color--lightBlue">{{ item.copy.standfirst|trim }}</p>
+              {% endif %}
+              {% if item.cta_button.cta_link.url.href %}
+                <div class="destPinned__cta">
+                  {% set href = item.cta_button.cta_link.url.href %}
+                	{% if item.cta_button.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+                		{% set href = "mailto:" + href %}
+                	{% endif %}
+                	{% set rel = [] %}
+                	{% if item.cta_button.cta_link.no_follow %}
+                		{% do rel.append("nofollow") %}
+                	{% endif %}
+                	{% if item.cta_button.cta_link.open_in_new_tab %}
+                		{% do rel.append("noopener") %}
+                	{% endif %}
+                	<a href="{{ href }}" class="button button--secondary"
+                		{% if item.cta_button.cta_link.open_in_new_tab %}target="_blank"{% endif %}
+                		{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
+                		{{ item.cta_button.cta_text|trim }}
+                	</a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>

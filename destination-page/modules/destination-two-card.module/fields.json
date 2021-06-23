@@ -1,0 +1,50 @@
+[ {
+  "id" : "1fd5d73f-0dc6-22eb-43f8-935848f21b29",
+  "name" : "header",
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Header (H2)",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Advisory delayed: The 5-year plan is now a 4-year sprint"
+}, {
+  "id" : "0a167f85-45cf-cad6-addc-c7adb5afa932",
+  "name" : "cards",
+  "label" : "Cards",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a529a74d-e232-ba41-1570-73163d08a0ea",
+    "name" : "single_card",
+    "label" : "Single card",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 2,
+      "max" : 2,
+      "sorting_label_field" : "9ef02335-a6b9-cbaa-3f38-a09a1eaa9093",
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "9ef02335-a6b9-cbaa-3f38-a09a1eaa9093",
+      "name" : "copy",
+      "label" : "Copy",
+      "required" : true,
+      "locked" : false,
+      "type" : "richtext"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ { }, { } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "single_card" : [ { }, { } ]
+  }
+} ]
