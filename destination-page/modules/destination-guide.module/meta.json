@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/block-icons/guide.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 49443519789,
+  "label" : "Destination guide",
+  "is_available_for_new_content" : true
+}

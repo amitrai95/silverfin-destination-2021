@@ -17,7 +17,7 @@
             {% endif %}
           </div>
 
-          <div class="destHeader__cta d-none d-sm-flex">
+          <div class="destHeader__cta d-flex">
             {% set href = module.cta_button.cta_link.url.href %}
             {% if module.cta_button.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
             	{% set href = "mailto:" + href %}
@@ -29,7 +29,7 @@
             {% if module.cta_button.cta_link.open_in_new_tab %}
             	{% do rel.append("noopener") %}
             {% endif %}
-            <a href="{{ href }}" class="button button--primary"
+            <a href="{{ href }}" class="button button--primary button--sm"
             	{% if module.cta_button.cta_link.open_in_new_tab %}target="_blank"{% endif %}
             	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
             	{{ module.cta_button.cta_text|trim }}

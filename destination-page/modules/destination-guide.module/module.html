@@ -1,0 +1,34 @@
+<section class="destGuide">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-xl-9">
+        <div class="destGuide__intro text-center">
+          <h1 class="destGuide__header color--navy">{{ module.title|trim }}</h1>
+          <p class="destGuide__standfirst display--1 mb-0">{{ module.standfirst|trim }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="destGuide__guide text-center">
+          <img class="destGuide__avatar" loading="lazy" src="{{ module.guide.guide_image.src }}" alt="{{ module.guide.guide_image.alt }}">
+          <p class="destGuide__name">{{ module.guide.guide_name|trim }}</p>
+          <p class="destGuide__role">{{ module.guide.guide_role|trim }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="destGuide__button flex-align">
+          <div class="wistia_embed wistia_async_{{ module.button.wistia_video_id|trim }} popover=true popoverContent=html" style="display:inline-block; white-space:nowrap;" id="wistia-{{ module.button.wistia_video_id|trim }}-1">
+            <a class="button button--play open-popup-link">{{ module.button.cta_text|trim }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

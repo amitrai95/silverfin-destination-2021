@@ -100,14 +100,14 @@ $(function() {
 
   sr.reveal('.destPinned__graphic', {
     origin: 'left',
-    distance: '150px',
-    duration: 1500
+    distance: '100px',
+    duration: 1200
   });
 
   sr.reveal('.destPinned__body', {
     origin: 'right',
-    distance: '150px',
-    duration: 1500
+    distance: '100px',
+    duration: 1200
   });
 
 

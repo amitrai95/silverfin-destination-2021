@@ -1,0 +1,129 @@
+[ {
+  "id" : "5c5f37c5-1b4c-6b8a-dee1-72a5c706f853",
+  "name" : "title",
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Title (H1)",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Technology Trends in Accounting 2021"
+}, {
+  "id" : "5abb8e91-e50a-7237-88da-3becaa409045",
+  "name" : "standfirst",
+  "label" : "Standfirst",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Standfirst",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "An introduction to your Silverfin expert who will explain what headway firms have made in their transformation from bookkeeping to trusted business advisors. "
+}, {
+  "id" : "32be3f47-949f-ce81-80aa-0c9b923f6579",
+  "name" : "guide",
+  "label" : "Guide",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "39ec7cfa-b8f5-150a-72ae-87bd1778848a",
+    "name" : "guide_image",
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-guide/stuart-handley-avatar.svg",
+      "alt" : "stuart-handley-avatar",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    }
+  }, {
+    "id" : "560186ee-acda-5308-ecf0-a3f25272c130",
+    "name" : "guide_name",
+    "label" : "Name",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Name",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Stuart Handley"
+  }, {
+    "id" : "d25ca674-7448-8dc2-df0a-e011e9185c8d",
+    "name" : "guide_role",
+    "label" : "Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Role",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "SVP Marketing"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "guide_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-guide/stuart-handley-avatar.svg",
+      "alt" : "stuart-handley-avatar",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "guide_name" : "Stuart Handley",
+    "guide_role" : "SVP Marketing"
+  }
+}, {
+  "id" : "fc8ce7e2-eccd-c2cc-e820-f9ed9a49d443",
+  "name" : "button",
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "38d4fecb-8264-1a4b-037e-52ecbca44f4a",
+    "name" : "cta_text",
+    "label" : "CTA text",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA text",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Meet your personal guide"
+  }, {
+    "id" : "8e124d98-e22a-e6b9-e65a-102f6174982e",
+    "name" : "wistia_video_id",
+    "label" : "Wistia Video ID",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Wistia Video ID",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta_text" : "Meet your personal guide"
+  }
+} ]

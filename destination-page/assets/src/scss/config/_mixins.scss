@@ -26,20 +26,32 @@
 /* FONT FAMILIES */
 /*****************/
 
+@font-face {
+  font-family: 'Cera-Regular';
+  src:  url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/fonts/cera-regular/cera-regular.otf') format('opentype'),
+        url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/fonts/cera-regular/cera-regular.woff2') format('woff2'),
+        url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/fonts/cera-regular/cera-regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Cera-Bold';
+  src: url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/fonts/cera-bold/cera-bold.otf') format('opentype'),
+       url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/fonts/cera-bold/cera-bold.woff2') format('woff2'),
+       url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/fonts/cera-bold/cera-bold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+
 @mixin cera{
-  font-family:'Cera-Regular';
-}
-
-@mixin cera-light{
-  font-family:'Cera-Light';
-}
-
-@mixin cera-medium{
-  font-family:'Cera-Medium';
+  font-family:'Cera-Regular', sans-serif;
 }
 
 @mixin cera-bold{
-  font-family:'Cera-Bold';
+  font-family:'Cera-Bold', sans-serif;
 }
 
 /**********/

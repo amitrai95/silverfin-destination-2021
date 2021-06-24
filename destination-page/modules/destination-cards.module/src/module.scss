@@ -2,6 +2,7 @@
 
 .destCards{
   overflow: hidden;
+  padding-bottom: 264px;
 
   &__header{
     margin-bottom: 29px;
@@ -51,6 +52,10 @@
 
     &__header{
       margin-bottom: 22px;
+    }
+
+    &__icon{
+      max-height: 30px;
     }
 
   }
