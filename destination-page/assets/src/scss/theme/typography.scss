@@ -41,17 +41,22 @@ h1, h2, h3, h4, h5, h6{
 /*============*/
 
 p{
-  @include fluid-type(20px, 20px);
-  @include fluid-line-height(28px, 28px);
+  @include fluid-type(16px, 20px);
+  @include fluid-line-height(24px, 28px);
 
   &.display--1{
-    @include fluid-type(24px, 24px);
-    @include fluid-line-height(32px, 32px);
+    @include fluid-type(20px, 24px);
+    @include fluid-line-height(28px, 32px);
   }
 
   &.display--2{
-    @include fluid-type(18px, 18px);
-    @include fluid-line-height(24px, 24px);
+    @include fluid-type(15px, 18px);
+    @include fluid-line-height(22px, 24px);
+  }
+
+  &.display--3{
+    @include fluid-type(16px, 16px);
+    @include fluid-line-height(22px, 22px);
   }
 
   &:empty{

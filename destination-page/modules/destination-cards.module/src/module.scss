@@ -4,6 +4,10 @@
   overflow: hidden;
   padding-bottom: 264px;
 
+  &__intro{
+    margin-bottom: 17px;
+  }
+
   &__header{
     margin-bottom: 29px;
   }
@@ -15,7 +19,7 @@
 
   &__cards{
     margin-top: 30px;
-    @include media-breakpoint-up-md{
+    @include media-breakpoint-up-sm{
       @include flex-align($justify: space-between);
       flex-wrap: wrap;
     }
@@ -28,13 +32,13 @@
 
     &--1{
       @include media-breakpoint-up-xl{
-        padding: 39px 61px 44px 61px;
+        padding: 39px 58px 44px 58px;
       }
     }
 
     &--2{
       @include media-breakpoint-up-xl{
-        padding: 37px 55px 44px 55px;
+        padding: 37px 42px 44px 42px;
       }
     }
 
@@ -51,13 +55,24 @@
     }
 
     &__header{
-      margin-bottom: 22px;
+      margin-bottom: 12px;
+      @include media-breakpoint-up-md{
+        margin-bottom: 22px;
+      }
     }
 
     &__icon{
-      max-height: 30px;
+      max-height: 18px;
+      @include media-breakpoint-up-md{
+        max-height: 30px;
+      }
     }
 
+  }
+
+
+  &__cta{
+    margin-top: 44px;
   }
 
 

@@ -1,7 +1,7 @@
 @import "../config.scss";
 
 .button{
-  @include fluid-type(16px, 20px);
+  @include fluid-type(18px, 20px);
   @include fluid-line-height(27px, 29px);
   @include transition;
   @include no-user-select;
@@ -19,7 +19,7 @@
   }
 
   &--sm{
-    padding: 22px 15px 22px 15px;
+    padding: 15px;
     @include media-breakpoint-up-sm{
       padding: 22.7px 38px 24.5px 31px;
     }

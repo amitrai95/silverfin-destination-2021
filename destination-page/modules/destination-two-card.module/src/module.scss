@@ -7,6 +7,10 @@
   &__cards{
     @include flex-align;
     margin-top: 173px;
+    flex-direction: column;
+    @include media-breakpoint-up-xl{
+      flex-direction: row;
+    }
   }
 
   .destTwoCrd{

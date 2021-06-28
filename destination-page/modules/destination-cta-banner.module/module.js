@@ -1,0 +1,1 @@
+$(function(){window.sr=ScrollReveal({reset:!0}),sr.reveal(".destCTABanner__copy",{duration:1e3}),sr.reveal(".destCTABanner__cta",{origin:"bottom",distance:"150px",duration:1e3})});

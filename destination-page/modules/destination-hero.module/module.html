@@ -1,3 +1,23 @@
+{% set desktop_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-3.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-4.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-5.svg'
+  ]
+%}
+
+{% set mobile_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-3.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-4.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-bg-mobile-5.svg'
+  ]
+%}
+
 <section class="destHero">
   <div class="container">
     <div class="row justify-content-center">
@@ -12,11 +32,17 @@
     </div>
   </div>
 
-  <div class="destHero__images d-flex">
-    <!-- {% for item in module.images.image %}
-      <div class="destHero__bg destHero__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item.src }});"></div>
-    {% endfor %} -->
-    <img class="svg-inline" src="https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/hero/hero-graphic.svg"/>
+  <div class="destHero__images d-none d-xl-flex">
+    {% for item in desktop_images %}
+      <div class="destHero__bg destHero__bg--{{ loop.index }} destHero__shape--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% endfor %}
   </div>
+
+  <div class="destHero__images destHero__images--moble d-flex d-xl-none">
+    {% for mob_image in mobile_images %}
+      <div class="destHero__bg destHero__bg--{{ loop.index }} destHero__shape--{{ loop.index }}" loading="lazy" style="background-image: url({{ mob_image }});"></div>
+    {% endfor %}
+  </div>
+
 
 </section>

@@ -1,0 +1,14 @@
+@import "destination-page/assets/src/scss/config.scss";
+
+.destPieChart{
+
+  &__standfirst{
+    max-width: 820px;
+    @include mx-auto;
+  }
+
+  &__subheader{
+    margin-bottom: 48px;
+  }
+
+}
