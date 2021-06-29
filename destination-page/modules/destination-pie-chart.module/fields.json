@@ -1,37 +1,203 @@
 [ {
-  "id" : "2dfcdb0a-3aec-29a7-896d-d60c0815559e",
-  "name" : "header",
-  "label" : "Header",
-  "required" : true,
-  "locked" : true,
-  "validation_regex" : "",
-  "placeholder" : "Header (H2)",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "It’s Groundhog Day for accounting"
-}, {
-  "id" : "d8d0814b-fb85-1f07-fc7e-57cbd1b5d155",
-  "name" : "standfirst",
-  "label" : "Standfirst",
+  "id" : "108619df-6c67-4dec-8706-85ed581c75b5",
+  "name" : "copy",
+  "label" : "Copy",
   "required" : false,
-  "locked" : true,
-  "validation_regex" : "",
-  "placeholder" : "Standfirst",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Despite 76% of firms stating a desire to shift from bookkeeping to advisory in our last report, those receiving the majority of their income from advisory services remains flat at 14%."
+  "locked" : false,
+  "children" : [ {
+    "id" : "a65f4b43-ff53-ef7e-13cf-5d55b1b6812d",
+    "name" : "header",
+    "label" : "Header",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Header (H2)",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "It’s time to chart accounting’s progress"
+  }, {
+    "id" : "78bf28a6-fe02-1c51-2e44-aa84d1573e06",
+    "name" : "standfirst",
+    "label" : "Standfirst",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Standfirst",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "What headway have firms made in their transformation from bookkeeping to trusted business advisors?"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "header" : "It’s time to chart accounting’s progress",
+    "standfirst" : "What headway have firms made in their transformation from bookkeeping to trusted business advisors?"
+  }
 }, {
-  "id" : "69931d36-f24c-8d7a-f1d5-2ff705ba0b63",
-  "name" : "subheader",
-  "label" : "Subheader",
+  "id" : "65cffd33-8bf7-95b2-fc03-ddc4050a4011",
+  "name" : "cards",
+  "label" : "Cards",
   "required" : false,
-  "locked" : true,
-  "validation_regex" : "",
-  "placeholder" : "Subheader",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Where does most of your revenue come from today?"
+  "locked" : false,
+  "children" : [ {
+    "id" : "462c804f-a0a5-87a3-7665-168e59819dc9",
+    "name" : "single_card",
+    "label" : "Single card",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 4,
+      "max" : 4,
+      "sorting_label_field" : "4a1dac26-2afa-21db-7b57-024a83db91e3",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "4eabbe07-6816-e192-933f-b98e958dc7c2",
+      "name" : "icon",
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "4a1dac26-2afa-21db-7b57-024a83db91e3",
+      "name" : "text",
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "single_card" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ]
+  }
+}, {
+  "id" : "8ee7d09d-728e-2dd3-1d7e-47f840c85f52",
+  "name" : "cta_button",
+  "label" : "CTA button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7128b023-507b-80c5-7baa-06ed6b80988f",
+    "name" : "cta_text",
+    "label" : "CTA text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA text",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Download the Report"
+  }, {
+    "id" : "c684c3a0-bfc6-147b-6d61-51f23ee5cf1f",
+    "name" : "cta_link",
+    "label" : "CTA link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta_text" : "Download the Report",
+    "cta_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
 } ]

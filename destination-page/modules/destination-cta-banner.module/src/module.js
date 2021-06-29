@@ -1,6 +1,6 @@
 $(function() {
 
-  window.sr = ScrollReveal({ reset: true });
+  window.sr = ScrollReveal({ reset: false });
 
   sr.reveal('.destCTABanner__copy', {
     duration: 1000

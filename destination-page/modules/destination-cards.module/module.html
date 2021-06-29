@@ -1,3 +1,11 @@
+{% set desktop_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-3.svg'
+  ]
+%}
+
 <section class="destCards">
   <div class="container">
 
@@ -12,7 +20,7 @@
 
 
     <div class="row justify-content-center">
-      <div class="col-9 col-sm-11 col-md-10 col-xxl-8">
+      <div class="col-9 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
         <div class="destCards__cards">
           {% for item in module.cards.single_card %}
             <div class="destCards__singleCard globalCard destCard destCard--{{ loop.index }}">
@@ -52,4 +60,13 @@
     </div>
 
   </div>
+
+
+  <div class="destCards__images d-none d-xl-flex">
+    {% for item in desktop_images %}
+      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% endfor %}
+  </div>
+
+
 </section>

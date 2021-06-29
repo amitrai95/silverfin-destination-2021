@@ -3,6 +3,11 @@
 .destCards{
   overflow: hidden;
   padding-bottom: 264px;
+  position: relative;
+  // padding-top: 83px;
+  @include media-breakpoint-up-xl{
+    padding-bottom: 534px;
+  }
 
   &__intro{
     margin-bottom: 17px;
@@ -26,8 +31,10 @@
   }
 
   .destCard{
+    position: relative;
+    z-index: 10;
     @include media-breakpoint-up-xl{
-      margin-bottom: 31px;
+      margin-bottom: 41px;
     }
 
     &--1{
@@ -76,6 +83,40 @@
   }
 
 
+  &__bg{
+    background-repeat: no-repeat;
+    background-size: contain;
+    // visibility: hidden;
+    position: absolute;
+    bottom: 0;
 
+    &--1{
+      left: 0;
+      @include media-breakpoint-up-xl{
+        height: 802px;
+        width: 212px;
+        top: -3px;
+      }
+    }
+
+    &--2{
+      @include media-breakpoint-up-xl{
+        height: 615px;
+        width: 636px;
+        top: 432px;
+        left: -39px;
+      }
+    }
+
+    &--3{
+      @include media-breakpoint-up-xl{
+        right: 0;
+        bottom: 0px;
+        height: 534px;
+        width: 770px;
+      }
+    }
+
+  }
 
 }

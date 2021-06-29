@@ -4,7 +4,6 @@
   padding: 62px 0px 265px 0px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 83px;
   @include media-breakpoint-up-sm{
     padding: 62px 0px 300px 0px;
   }
@@ -58,8 +57,9 @@
         height: 105px;
         bottom: 123px;
       }
-      @include media-breakpoint-up-xxl{
-        width: calc(100% - 105px);
+      @include media-breakpoint-up-xxxl{
+        max-height: 105px;
+        width: calc(100% - 217px);
         background-position: center;
       }
     }

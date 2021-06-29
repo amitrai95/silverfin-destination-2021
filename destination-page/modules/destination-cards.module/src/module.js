@@ -43,4 +43,12 @@ $(function() {
     duration: 1500
   });
 
+
+  sr.reveal('.destCards__bg--1', {
+    origin: 'bottom',
+    distance: '200px',
+    duration: 1500,
+    delay: 500,
+  });
+
 });
