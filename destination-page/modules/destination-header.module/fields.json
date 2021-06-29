@@ -58,37 +58,11 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "default" : "Download the Report"
-  }, {
-    "id" : "b2dab410-3f13-ff45-c0c9-4238745872d6",
-    "name" : "cta_link",
-    "label" : "CTA link",
-    "required" : true,
-    "locked" : false,
-    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
-    "type" : "link",
-    "default" : {
-      "url" : {
-        "content_id" : null,
-        "href" : "",
-        "type" : "CONTENT"
-      },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    }
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "type" : "group",
   "default" : {
-    "cta_text" : "Download the Report",
-    "cta_link" : {
-      "url" : {
-        "content_id" : null,
-        "href" : "",
-        "type" : "CONTENT"
-      },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    }
+    "cta_text" : "Download the Report"
   }
 } ]

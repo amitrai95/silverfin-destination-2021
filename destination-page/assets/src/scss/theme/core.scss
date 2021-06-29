@@ -19,6 +19,12 @@ section{
   overflow-x: hidden;
 }
 
+svg,
+svg *{
+  transition: fill .5s ease;
+  @include no-user-select;
+}
+
 img{
   width: auto;
   height: auto;

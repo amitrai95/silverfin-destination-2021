@@ -74,3 +74,20 @@ ul.reset-list{
 .cera-bold{
   @include cera-bold;
 }
+
+.overlay{
+  position: relative;
+
+  &:before{
+    @include pseudo;
+    @include absolute-fill;
+    z-index: 999;
+  }
+
+  &--grey{
+    &:before{
+      background: rgba(0,0,0,0.7);
+    }
+  }
+
+}

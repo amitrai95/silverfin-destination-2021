@@ -1,2 +1,30 @@
+<div class="destModal">
+
+  <div class="destModal__inner">
+
+    <div class="destModal__close">
+      <svg class="destModal__icon destModal--close" enable-background="new 0 0 512.001 512.001" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m284.29 256 221.86-221.86c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.86 221.86-221.86-221.86c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.86 221.86-221.86 221.86c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.86-221.86 221.86 221.86c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285l-221.86-221.86z"/></svg>
+    </div>
+
+    <div class="destModal__intro text-center">
+      <h2 class="destModal__header display--2 color--navy mb-0">{{ module.modal_popup.header|trim }}</h2>
+    </div>
+
+    <div class="destModal__form">
+      {% form
+      	form_to_use="{{ module.modal_popup.modal_form.form_id }}"
+      	response_response_type="{{ module.modal_popup.modal_form.response_type }}"
+      	response_message="{{ module.modal_popup.modal_form.message }}"
+      	response_redirect_id="{{ module.modal_popup.modal_form.redirect_id }}"
+      	response_redirect_url="{{module.modal_popup.modal_form.redirect_url}}"
+      	gotowebinar_webinar_key="{{ module.modal_popup.modal_form.gotowebinar_webinar_key }}"
+      %}
+    </div>
+
+  </div>
+</div>
+
+
+
 <script src="//fast.wistia.com/embed/medias/j38ihh83m5.jsonp" async></script>
 <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>

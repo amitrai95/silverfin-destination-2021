@@ -1,1 +1,47 @@
-[ ]
+[ {
+  "id" : "aafa6d21-31c4-7e91-8a96-abeeaf0a2f11",
+  "name" : "modal_popup",
+  "label" : "Modal popup",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "42d48ed2-125b-0f26-e8ce-f1b0942755ca",
+    "name" : "header",
+    "label" : "Header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Header",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get all the insights from our research report "
+  }, {
+    "id" : "4d7c9a57-b010-e46a-e015-02e6baee0694",
+    "name" : "modal_form",
+    "label" : "Modal form",
+    "required" : false,
+    "locked" : true,
+    "type" : "form",
+    "default" : {
+      "form_id" : "ccaa5a64-2c28-41f1-b261-065de08f0daf",
+      "response_type" : "inline",
+      "message" : "Thank for downloading!",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "header" : "Get all the insights from our research report ",
+    "modal_form" : {
+      "form_id" : "ccaa5a64-2c28-41f1-b261-065de08f0daf",
+      "response_type" : "inline",
+      "message" : "Thank for downloading!",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }
+} ]

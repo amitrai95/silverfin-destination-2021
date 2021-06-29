@@ -154,6 +154,21 @@
   box-sizing: $box-model;
 }
 
+@mixin absolute-fill{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin completely-hide{
+  visibility: hidden;
+  display: none!important;
+  height: 0;
+  opacity: 0;
+}
+
 
 /*******************/
 /* BROWSER RELATED */

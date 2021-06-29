@@ -17,6 +17,7 @@
 
   &__logo{
     width: 135px;
+    @include no-user-select;
     @include media-breakpoint-up-sm{
       width: 156px;
     }
