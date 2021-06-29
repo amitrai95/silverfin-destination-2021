@@ -19,13 +19,18 @@
   }
 
   &__inner{
-    padding: 35px;
+    padding: 35px 30px;
     background-color: $white;
     @include border-radius(5px);
-    max-height: 750px;
+    max-height: 850px;
     display: flex;
     overflow: scroll;
     flex-direction: column;
+    margin: 15px;
+    @include media-breakpoint-up-xl{
+      padding: 61px 42px 73px 42px;
+      max-height: 750px;
+    }
   }
 
   &__close{
@@ -150,6 +155,7 @@
 
     .legal-consent-container{
       margin-top: 40px;
+      text-align: left;
       *{
         @include fluid-type(12px, 12px);
         @include fluid-line-height(15px, 15px);

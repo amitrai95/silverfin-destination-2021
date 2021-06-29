@@ -6,11 +6,19 @@
   ]
 %}
 
+{% set mobile_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-mobile-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-mobile-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-mobile-3.svg'
+  ]
+%}
+
 <section class="destCards">
   <div class="container">
 
     <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-xl-7">
+      <div class="col-9 col-sm-10 col-xl-7">
         <div class="destCards__intro text-center">
           <h2 class="destCards__header color--navy">{{ module.copy.header|trim }}</h2>
           <p class="destCards__standfirst color--lightGrey mb-0">{{ module.copy.standfirst|trim }}</p>
@@ -50,6 +58,12 @@
   <div class="destCards__images d-none d-xl-flex">
     {% for item in desktop_images %}
       <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% endfor %}
+  </div>
+
+  <div class="destCards__images destCards__images--moble d-flex d-xl-none">
+    {% for mob_image in mobile_images %}
+      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ mob_image }});"></div>
     {% endfor %}
   </div>
 

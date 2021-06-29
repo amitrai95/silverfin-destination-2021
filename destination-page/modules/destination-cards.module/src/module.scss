@@ -4,8 +4,9 @@
   overflow: hidden;
   padding-bottom: 264px;
   position: relative;
-  // padding-top: 83px;
+  padding-top: 74px;
   @include media-breakpoint-up-xl{
+    padding-top: 0;
     padding-bottom: 534px;
   }
 
@@ -91,7 +92,14 @@
     bottom: 0;
 
     &--1{
-      left: 0;
+      left: -1px;
+      top: 0;
+      height: 847px;
+      width: 86px;
+      @include media-breakpoint-up-sm{
+        height: 905px;
+        width: 130px;
+      }
       @include media-breakpoint-up-xl{
         height: 802px;
         width: 212px;
@@ -100,6 +108,15 @@
     }
 
     &--2{
+      height: 615px;
+      width: 110%;
+      top: 582px;
+      left: -29px;
+      @include media-breakpoint-up-sm{
+        top: 675px;
+        height: 390px;
+        width: 400px;
+      }
       @include media-breakpoint-up-xl{
         height: 615px;
         width: 636px;
@@ -109,8 +126,12 @@
     }
 
     &--3{
+      right: 0;
+      @include media-breakpoint-up-sm{
+        width: 335px;
+        height: 305px;
+      }
       @include media-breakpoint-up-xl{
-        right: 0;
         bottom: 0px;
         height: 534px;
         width: 770px;

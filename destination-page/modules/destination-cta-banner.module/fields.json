@@ -19,21 +19,4 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : "Download the Report"
-}, {
-  "id" : "e2dcd67e-df51-8348-1ab5-c8bd54b14bc8",
-  "name" : "cta_link",
-  "label" : "CTA link",
-  "required" : true,
-  "locked" : false,
-  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
-  "type" : "link",
-  "default" : {
-    "url" : {
-      "content_id" : null,
-      "href" : "",
-      "type" : "CONTENT"
-    },
-    "open_in_new_tab" : false,
-    "no_follow" : false
-  }
 } ]

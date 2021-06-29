@@ -19,28 +19,28 @@ $(function() {
   sr.reveal('.destHero__shape--2', {
     origin: 'bottom',
     distance: '100px',
-    delay: 1000,
+    delay: 800,
     duration: 1500
   });
 
   sr.reveal('.destHero__shape--3', {
     origin: 'bottom',
     distance: '100px',
-    delay: 1500,
+    delay: 1200,
     duration: 1500
   });
 
   sr.reveal('.destHero__shape--4', {
     origin: 'bottom',
     distance: '100px',
-    delay: 2000,
+    delay: 1500,
     duration: 1500
   });
 
   sr.reveal('.destHero__shape--5', {
     origin: 'bottom',
     distance: '100px',
-    delay: 2500,
+    delay: 1800,
     duration: 1500
   });
 

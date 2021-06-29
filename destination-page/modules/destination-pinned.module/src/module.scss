@@ -1,8 +1,10 @@
 @import "destination-page/assets/src/scss/config.scss";
 
 .destPinned{
+  overflow: visible;
 
   &__slide{
+    overflow: hidden;
     @include flex-align;
     height: 100vh;
     min-height: 1080px;

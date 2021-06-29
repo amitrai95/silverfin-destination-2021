@@ -30,14 +30,7 @@
           <div class="col-12 col-lg-5">
             <div class="destPinned__graphic">
               {% if item.image.image.src %}
-                {% set sizeAttrs = 'width="{{ item.image.image.width }}" height="{{ item.image.image.height }}"' %}
-                {% if item.image.image.size_type == 'auto' %}
-                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-                {% elif item.image.image.size_type == 'auto_custom_max' %}
-                  {% set sizeAttrs = 'width="{{ item.image.image.max_width }}" height="{{ item.image.image.max_height }}" style="max-width: 100%; height: auto;"' %}
-                {% endif %}
-                 {% set loadingAttr = item.image.image.loading != 'disabled' ? 'loading="{{ item.image.image.loading }}"' : '' %}
-                <img class="destPinned__image" loading="lazy" src="{{ item.image.image.src }}" alt="{{ item.image.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                <img class="destPinned__image" src="{{ item.image.image.src }}" alt="{{ item.image.image.alt }}">
               {% endif %}
             </div>
           </div>
