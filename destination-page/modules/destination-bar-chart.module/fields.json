@@ -30,21 +30,4 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : "See the whole picture"
-}, {
-  "id" : "a6a8acec-e63f-03ea-f93f-4d82b3994538",
-  "name" : "cta_link",
-  "label" : "CTA link",
-  "required" : false,
-  "locked" : false,
-  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
-  "type" : "link",
-  "default" : {
-    "url" : {
-      "content_id" : null,
-      "href" : "",
-      "type" : "CONTENT"
-    },
-    "open_in_new_tab" : false,
-    "no_follow" : false
-  }
 } ]

@@ -7,6 +7,12 @@
   ]
 %}
 
+{% set mobile_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-two-card/two-cards-bg-mobile-1.svg'
+  ]
+%}
+
 <section class="destTwoCard">
   <div class="container">
 
@@ -35,6 +41,12 @@
   <div class="destTwoCard__images d-none d-xl-flex">
     {% for item in desktop_images %}
       <div class="destTwoCard__bg destTwoCard__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% endfor %}
+  </div>
+
+  <div class="destTwoCard__images destTwoCard__images--moble d-flex d-xl-none">
+    {% for mob_image in mobile_images %}
+      <div class="destTwoCard__bg destTwoCard__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ mob_image }});"></div>
     {% endfor %}
   </div>
 

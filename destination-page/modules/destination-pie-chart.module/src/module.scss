@@ -1,18 +1,82 @@
 @import "destination-page/assets/src/scss/config.scss";
 
 .destPieChart{
+  position: relative;
 
   @include media-breakpoint-up-xl{
     padding: 107px 0px 300px 0px;
   }
 
+  &__intro{
+    margin-bottom: 48px;
+  }
+
+  &__header{
+    margin-bottom: 30px;
+  }
+
   &__standfirst{
-    max-width: 820px;
+    max-width: 700px;
     @include mx-auto;
   }
 
   &__subheader{
-    margin-bottom: 48px;
+    margin-top: 48px;
+  }
+
+
+  &__cta{
+    margin-top: 30px;
+    @include media-breakpoint-up-xl{
+      margin-top: 90px;
+    }
+  }
+
+
+  &__bg{
+    background-repeat: no-repeat;
+    background-size: contain;
+    // visibility: hidden;
+    position: absolute;
+    bottom: 0;
+
+    &--1{
+      right: 1px;
+      top: 0;
+      height: 847px;
+      width: 86px;
+      @include media-breakpoint-up-sm{
+        height: 905px;
+        width: 130px;
+      }
+      @include media-breakpoint-up-xl{
+        height: 1100px;
+        width: 244px;
+      }
+    }
+
+    &--2{
+      left: 0px;
+      bottom: 0;
+      height: 847px;
+      width: 86px;
+      @include media-breakpoint-up-xl{
+        height: 439px;
+        width: 732px;
+      }
+    }
+
+    &--3{
+      right: 1px;
+      // bottom: -33px;
+      height: 847px;
+      width: 86px;
+      @include media-breakpoint-up-xl{
+        height: 411px;
+        width: 635px;
+      }
+    }
+
   }
 
 }

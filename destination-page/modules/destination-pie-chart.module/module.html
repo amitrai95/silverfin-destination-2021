@@ -1,3 +1,11 @@
+{% set desktop_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart-bg-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart-bg-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart-bg-3.svg'
+  ]
+%}
+
 <section class="destPieChart">
   <div class="container">
 
@@ -6,7 +14,7 @@
         <div class="destPieChart__intro text-center">
           <h2 class="destPieChart__header color--navy">{{ module.header|trim }}</h2>
           <p class="destPieChart__standfirst display--1 color--lightGrey">{{ module.standfirst }}</p>
-          <p class="destPieChart__subheader display--3 color--navy">{{ module.subheader|trim }}</p>
+          <p class="destPieChart__subheader display--3 color--navy mb-0">{{ module.subheader|trim }}</p>
         </div>
       </div>
     </div>
@@ -15,9 +23,33 @@
       <div class="col-12 col-md-10">
         <div class="destPieChart__graphic text-center">
           <img src="https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart.svg" />
+
+          <lottie-player class="destBarChart__player"
+            src="https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/json/pie-chart-1.json"
+            background="transparent"
+            speed="1"
+            loop autoplay >
+          </lottie-player>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <div class="destPieChart__cta flex-align">
+          <a href="#" class="button button--primary destModal--open">{{ module.cta_text|trim }}</a>
         </div>
       </div>
     </div>
 
   </div>
+
+  <div class="destPieChart__images d-none d-xl-flex">
+    {% for item in desktop_images %}
+      <div class="destPieChart__bg destPieChart__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% endfor %}
+  </div>
+
+
 </section>

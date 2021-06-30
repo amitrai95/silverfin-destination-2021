@@ -2,7 +2,7 @@
 
 
 .destBarChart{
-
+  position: relative;
   padding: 166px 0px;
 
 
@@ -14,6 +14,47 @@
 
   &__graphic{
     margin: 34px 0px 66px 0px;
+  }
+
+
+  &__bg{
+    background-repeat: no-repeat;
+    background-size: contain;
+    // visibility: hidden;
+    position: absolute;
+    bottom: 0;
+
+    &--1{
+      left: -1px;
+      top: -2px;
+      height: 847px;
+      width: 86px;
+      @include media-breakpoint-up-xl{
+        height: 1097px;
+        width: 368px;
+      }
+    }
+
+    &--2{
+      left: -1px;
+      top: -2px;
+      @include media-breakpoint-up-xl{
+        top: 1095px;
+        height: 640px;
+        width: 546px;
+      }
+    }
+
+    &--3{
+      right: -51px;
+      bottom: 0;
+      @include media-breakpoint-up-xl{
+        bottom: -103px;
+        height: 635px;
+        width: 901px;
+      }
+    }
+
   }
 
 }
