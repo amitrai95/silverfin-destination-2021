@@ -51,4 +51,18 @@ $(function() {
     delay: 500,
   });
 
+  sr.reveal('.destCards__bg--2', {
+    origin: 'bottom',
+    distance: '200px',
+    duration: 1500,
+    delay: 900,
+  });
+
+  sr.reveal('.destCards__bg--3', {
+    origin: 'bottom',
+    distance: '200px',
+    duration: 1500,
+    delay: 1400,
+  });
+
 });

@@ -2,12 +2,17 @@
 
 .destCards{
   overflow: hidden;
-  padding-bottom: 264px;
   position: relative;
-  padding-top: 74px;
+  padding: 74px 0px 80px 0px;
+  @include media-breakpoint-up-sm{
+    padding-bottom: 346px;
+  }
   @include media-breakpoint-up-xl{
     padding-top: 0;
     padding-bottom: 534px;
+  }
+  @include media-breakpoint-up-xxl{
+    padding-bottom: 552px;
   }
 
   &__intro{
@@ -87,7 +92,7 @@
   &__bg{
     background-repeat: no-repeat;
     background-size: contain;
-    // visibility: hidden;
+    visibility: hidden;
     position: absolute;
     bottom: 0;
 
@@ -105,6 +110,11 @@
         width: 212px;
         top: -3px;
       }
+      @include media-breakpoint-up-xxl{
+        height: 909.42px;
+        width: 240px;
+        top: -3px;
+      }
     }
 
     &--2{
@@ -113,15 +123,26 @@
       top: 582px;
       left: -29px;
       @include media-breakpoint-up-sm{
-        top: 675px;
+        top: 673px;
         height: 390px;
         width: 400px;
+      }
+      @include media-breakpoint-up-md{
+        width: 420px;
+        height: 420px;
+        top: 663px;
       }
       @include media-breakpoint-up-xl{
         height: 615px;
         width: 636px;
         top: 432px;
         left: -39px;
+      }
+      @include media-breakpoint-up-xxl{
+        height: 697.69px;
+        width: 720.41px;
+        top: 432px;
+        left: -47px;
       }
     }
 
@@ -130,11 +151,27 @@
       @include media-breakpoint-up-sm{
         width: 335px;
         height: 305px;
+        bottom: 17px;
+        right: -70px;
+      }
+      @include media-breakpoint-up-md{
+        right: 0;
+        width: 385px;
+        height: 355px;
+        bottom: 5px;
       }
       @include media-breakpoint-up-xl{
         bottom: 0px;
         height: 534px;
         width: 770px;
+      }
+      @include media-breakpoint-up-xxl{
+        bottom: -134px;
+        height: 605.22px;
+        width: calc(100% - 565px);
+      }
+      @include media-breakpoint-up-xxxl{
+        bottom: -134px;
       }
     }
 

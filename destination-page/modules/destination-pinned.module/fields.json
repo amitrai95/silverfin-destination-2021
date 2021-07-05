@@ -17,33 +17,18 @@
     "required" : false,
     "locked" : false,
     "children" : [ {
-      "id" : "ca97bc14-0a49-041a-dc15-e3f18e43f465",
-      "name" : "image",
-      "label" : "Image",
+      "picker" : "file",
+      "id" : "2688d111-8068-949d-1ce3-5d57d8f0e25b",
+      "name" : "json",
+      "label" : "JSON",
       "required" : true,
       "locked" : false,
-      "responsive" : true,
-      "resizable" : true,
-      "show_loading" : false,
-      "type" : "image",
-      "default" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
+      "type" : "file"
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "type" : "group",
-    "default" : {
-      "image" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
-    }
+    "default" : { }
   }, {
     "id" : "0962c3b3-5684-1e45-4c38-7052c7f57885",
     "name" : "copy",
@@ -95,38 +80,12 @@
       "show_emoji_picker" : false,
       "type" : "text",
       "default" : "Get the full report"
-    }, {
-      "id" : "8f88d2bb-6237-1865-6937-7399cc900839",
-      "name" : "cta_link",
-      "label" : "CTA link",
-      "required" : false,
-      "locked" : false,
-      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
-      "type" : "link",
-      "default" : {
-        "url" : {
-          "content_id" : null,
-          "href" : "",
-          "type" : "CONTENT"
-        },
-        "open_in_new_tab" : false,
-        "no_follow" : false
-      }
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "type" : "group",
     "default" : {
-      "cta_text" : "Get the full report",
-      "cta_link" : {
-        "url" : {
-          "content_id" : null,
-          "href" : "",
-          "type" : "CONTENT"
-        },
-        "open_in_new_tab" : false,
-        "no_follow" : false
-      }
+      "cta_text" : "Get the full report"
     }
   } ],
   "tab" : "CONTENT",

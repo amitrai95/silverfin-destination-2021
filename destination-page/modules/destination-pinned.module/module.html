@@ -4,34 +4,20 @@
       <div class="container">
         <div class="row flex-column-reverse flex-lg-row justify-content-center align-items-center">
 
-          {% if item.cta_button.cta_link.url.href %}
-            <div class="destPinned__button">
-              <div class="destPinned__cta flex-align d-lg-none">
-                {% set href = item.cta_button.cta_link.url.href %}
-                {% if item.cta_button.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
-                  {% set href = "mailto:" + href %}
-                {% endif %}
-                {% set rel = [] %}
-                {% if item.cta_button.cta_link.no_follow %}
-                  {% do rel.append("nofollow") %}
-                {% endif %}
-                {% if item.cta_button.cta_link.open_in_new_tab %}
-                  {% do rel.append("noopener") %}
-                {% endif %}
-                <a href="{{ href }}" class="button button--secondary"
-                  {% if item.cta_button.cta_link.open_in_new_tab %}target="_blank"{% endif %}
-                  {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
-                  {{ item.cta_button.cta_text|trim }}
-                </a>
-              </div>
+          {% if item.cta_button.cta_text %}
+            <div class="destPinned__cta d-flex d-lg-none">
+              <a href="#" class="button button--secondary destModal--open">{{ item.cta_button.cta_text|trim }}</a>
             </div>
           {% endif %}
 
           <div class="col-12 col-lg-5">
             <div class="destPinned__graphic">
-              {% if item.image.image.src %}
-                <img class="destPinned__image" src="{{ item.image.image.src }}" alt="{{ item.image.image.alt }}">
-              {% endif %}
+              <lottie-player class="destPinned__player"
+                src="{{ item.image.json }}"
+                background="transparent"
+                speed="1"
+                loop autoplay >
+              </lottie-player>
             </div>
           </div>
 
@@ -42,24 +28,9 @@
               {% if item.copy.standfirst %}
                 <p class="destPinned__standfirst color--lightBlue">{{ item.copy.standfirst|trim }}</p>
               {% endif %}
-              {% if item.cta_button.cta_link.url.href %}
+              {% if item.cta_button.cta_text %}
                 <div class="destPinned__cta d-none d-lg-flex">
-                  {% set href = item.cta_button.cta_link.url.href %}
-                	{% if item.cta_button.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
-                		{% set href = "mailto:" + href %}
-                	{% endif %}
-                	{% set rel = [] %}
-                	{% if item.cta_button.cta_link.no_follow %}
-                		{% do rel.append("nofollow") %}
-                	{% endif %}
-                	{% if item.cta_button.cta_link.open_in_new_tab %}
-                		{% do rel.append("noopener") %}
-                	{% endif %}
-                	<a href="{{ href }}" class="button button--secondary"
-                		{% if item.cta_button.cta_link.open_in_new_tab %}target="_blank"{% endif %}
-                		{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
-                		{{ item.cta_button.cta_text|trim }}
-                	</a>
+                  <a href="#" class="button button--secondary destModal--open">{{ item.cta_button.cta_text|trim }}</a>
                 </div>
               {% endif %}
             </div>

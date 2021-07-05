@@ -1,4 +1,12 @@
-{% set desktop_images =
+{% set xxl_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-bg-xxl-3.svg'
+  ]
+%}
+
+{% set xl_images =
   [
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-1.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-2.svg',
@@ -6,7 +14,7 @@
   ]
 %}
 
-{% set mobile_images =
+{% set sm_images =
   [
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-mobile-1.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-cards/cards-bg-mobile-2.svg',
@@ -54,16 +62,21 @@
 
   </div>
 
+  <div class="destCards__images d-none d-xxl-flex">
+    {% for xxl_image in xxl_images %}
+      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ xxl_image }});"></div>
+    {% endfor %}
+  </div>
 
-  <div class="destCards__images d-none d-xl-flex">
-    {% for item in desktop_images %}
-      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+  <div class="destCards__images d-none d-xl-flex d-xxl-none">
+    {% for xl_image in xl_images %}
+      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ xl_image }});"></div>
     {% endfor %}
   </div>
 
   <div class="destCards__images destCards__images--moble d-flex d-xl-none">
-    {% for mob_image in mobile_images %}
-      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ mob_image }});"></div>
+    {% for sm_image in sm_images %}
+      <div class="destCards__bg destCards__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ sm_image }});"></div>
     {% endfor %}
   </div>
 

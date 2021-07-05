@@ -7,6 +7,10 @@
 h1{
   @include fluid-type(50px, 70px);
   @include fluid-line-height(60px, 84px);
+  &.display--1{
+    @include fluid-type(40px, 70px);
+    @include fluid-line-height(50px, 84px);
+  }
 }
 
 h2{
@@ -25,18 +29,6 @@ h3, h3 *{
   @include fluid-line-height(44px, 48px);
 }
 
-h4{
-
-}
-
-h5{
-
-}
-
-h6{
-
-}
-
 h1, h2, h3, h4, h5, h6{
   @include cera-bold;
 }
@@ -50,7 +42,7 @@ p{
   @include fluid-line-height(24px, 28px);
 
   &.display--1{
-    @include fluid-type(20px, 24px);
+    @include fluid-type(18px, 24px);
     @include fluid-line-height(28px, 32px);
   }
 
@@ -79,5 +71,5 @@ ol li{
 }
 
 strong{
-
+  @include cera-bold;
 }

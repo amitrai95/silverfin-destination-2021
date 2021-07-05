@@ -1,3 +1,23 @@
+{% set xl_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-3.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-4.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-5.svg'
+  ]
+%}
+
+{% set sm_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-2.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-3.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-4.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-bg-mobile-5.svg'
+  ]
+%}
+
 <section class="destGuide">
   <div class="container">
 
@@ -31,4 +51,17 @@
     </div>
 
   </div>
+
+  <div class="destGuide__images d-none d-xl-flex">
+    {% for xl_item in xl_images %}
+      <div class="destGuide__bg destGuide__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ xl_item }});"></div>
+    {% endfor %}
+  </div>
+
+  <div class="destGuide__images destGuide__images--moble d-flex d-xl-none">
+    {% for sm_image in sm_images %}
+      <div class="destGuide__bg destGuide__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ sm_image }});"></div>
+    {% endfor %}
+  </div>
+
 </section>
