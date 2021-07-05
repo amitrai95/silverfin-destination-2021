@@ -1,7 +1,7 @@
 @import "destination-page/assets/src/scss/config.scss";
 
 .destHero{
-  padding: 62px 0px 265px 0px;
+  padding: 32px 0px 285px 0px;
   position: relative;
   overflow: hidden;
   @include media-breakpoint-up-sm{
@@ -11,10 +11,7 @@
     padding: 62px 0px 475px 0px;
   }
   @include media-breakpoint-up-xl{
-    padding: 28px 0px 600px 0px;
-  }
-  @include media-breakpoint-up-xl{
-    padding: 28px 0px 730px 0px;
+    padding: 62px 0px 730px 0px;
   }
 
   &__intro{

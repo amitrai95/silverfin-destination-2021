@@ -1,14 +1,14 @@
-{% set desktop_images =
+{% set xl_images =
   [
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-1.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-2.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-3.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-4.svg',
-  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-5.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-5.svg'
   ]
-%}
+%} 
 
-{% set mobile_images =
+{% set sm_images =
   [
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-1.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-hero/hero-2.svg',
@@ -24,7 +24,7 @@
       <div class="col-12 col-md-10 col-xl-8">
 
         <div class="destHero__intro text-center">
-          <h1 class="destHero__title color--navy mb-0">{{ module.copy.title|trim }}</h1>
+          <h1 class="destHero__title color--navy display--1 mb-0">{{ module.copy.title|trim }}</h1>
           <p class="destHero__standfirst color--lightGrey display--1 mb-0">{{ module.copy.standfirst|trim }}</p>
         </div>
 
@@ -33,14 +33,14 @@
   </div>
 
   <div class="destHero__images d-none d-xl-flex">
-    {% for item in desktop_images %}
-      <div class="destHero__bg destHero__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% for xl_item in xl_images %}
+      <div class="destHero__bg destHero__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ xl_item }});"></div>
     {% endfor %}
   </div>
 
   <div class="destHero__images destHero__images--moble d-flex d-xl-none">
-    {% for mob_image in mobile_images %}
-      <div class="destHero__bg destHero__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ mob_image }});"></div>
+    {% for sm_image in sm_images %}
+      <div class="destHero__bg destHero__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ sm_image }});"></div>
     {% endfor %}
   </div>
 
