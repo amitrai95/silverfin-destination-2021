@@ -1,8 +1,24 @@
-{% set desktop_images =
+{% set xl_images =
   [
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart-bg-1.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart-bg-2.svg',
   'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-chart-bg-3.svg'
+  ]
+%}
+
+{% set sm_images =
+  [
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-bg-moblie-1.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-bg-mobile-3.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-bg-mobile-2.svg'
+  ]
+%}
+
+{% set xs_images =
+  [
+  '',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-bg-mobile-3.svg',
+  'https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pie-chart/pie-bg-mobile-2.svg'
   ]
 %}
 
@@ -14,7 +30,7 @@
         <div class="destPieChart__intro text-center">
           <h2 class="destPieChart__header color--navy">{{ module.header|trim }}</h2>
           <p class="destPieChart__standfirst display--1 color--lightGrey">{{ module.standfirst }}</p>
-          <p class="destPieChart__subheader display--3 color--navy mb-0">{{ module.subheader|trim }}</p>
+          <p class="destPieChart__subheader display--3 cera-bold color--navy mb-0">{{ module.subheader|trim }}</p>
         </div>
       </div>
     </div>
@@ -22,7 +38,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-10">
         <div class="destPieChart__graphic text-center">
-          <lottie-player class="destBarChart__player" src="{{ module.json }}" background="transparent" speed="1" loop autoplay></lottie-player>
+          <lottie-player id="destPieChart-animation" src="{{ module.json }}" autoplay class="destPieChart__player"></lottie-player>
         </div>
       </div>
     </div>
@@ -31,7 +47,7 @@
     <div class="row">
       <div class="col-12">
         <div class="destPieChart__cta flex-align">
-          <a href="#" class="button button--primary destModal--open">{{ module.cta_text|trim }}</a>
+          <a href="#" class="button button--md button--primary destModal--open">{{ module.cta_text|trim }}</a>
         </div>
       </div>
     </div>
@@ -39,8 +55,20 @@
   </div>
 
   <div class="destPieChart__images d-none d-xl-flex">
-    {% for item in desktop_images %}
-      <div class="destPieChart__bg destPieChart__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ item }});"></div>
+    {% for xl_image in xl_images %}
+      <div class="destPieChart__bg destPieChart__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ xl_image }});"></div>
+    {% endfor %}
+  </div>
+
+  <div class="destPieChart__images destPieChart__images--mobile d-none d-sm-flex d-xl-none">
+    {% for sm_image in sm_images %}
+      <div class="destPieChart__bg destPieChart__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ sm_image }});"></div>
+    {% endfor %}
+  </div>
+
+  <div class="destPieChart__images destPieChart__images--mobile d-flex d-sm-none">
+    {% for xs_image in xs_images %}
+      <div class="destPieChart__bg destPieChart__bg--{{ loop.index }}" loading="lazy" style="background-image: url({{ xs_image }});"></div>
     {% endfor %}
   </div>
 
