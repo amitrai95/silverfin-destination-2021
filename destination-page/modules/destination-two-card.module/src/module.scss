@@ -1,6 +1,5 @@
 @import "destination-page/assets/src/scss/config.scss";
 
-
 .destTwoCard{
   position: relative;
   padding: 60px 0px 195px 0px;
@@ -80,43 +79,50 @@
       @include media-breakpoint-up-xl{
         right: 0;
         bottom: -4px;
-        left: 99px;
-        width: 1100px;
         height: 277px;
-      }
-      @include media-breakpoint-up-xxl{
-        width: 100%;
       }
     }
 
     &--2{
       bottom: 130px;
       @include media-breakpoint-up-xl{
-        left: 348px;
+        left: 30%;
         width: 411px;
         height: 337px;
+      }
+      @include media-breakpoint-up-xxl{
+        left: 539px;
       }
     }
 
     &--3{
-      bottom: 137px;
+      bottom: 136px;
       @include media-breakpoint-up-xl{
         right: 0;
+        width: 460px;
+        height: 233px;
+      }
+      @media(min-width: 1366px){
         width: 550px;
         height: 283px;
+      }
+      @include media-breakpoint-up-xxl{
+        width: 680px;
       }
     }
 
     &--4{
       bottom: 137px;
       @include media-breakpoint-up-xl{
-        right: 42%;
+        right: 40.5%;
         width: 242px;
         height: 258px;
         bottom: 455px;
       }
+      @include media-breakpoint-up-xxl{
+        right: 43%;
+      }
     }
-
 
   }
 
