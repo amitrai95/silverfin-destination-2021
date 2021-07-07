@@ -46,13 +46,4 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : "Learn why there’s been no improvement"
-}, {
-  "picker" : "file",
-  "id" : "80bcb9e1-dbd0-1f40-b8c9-48383dce0983",
-  "name" : "json",
-  "label" : "JSON",
-  "required" : false,
-  "locked" : true,
-  "type" : "file",
-  "default" : "https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/json/pie-chart/pie-chart.json"
 } ]

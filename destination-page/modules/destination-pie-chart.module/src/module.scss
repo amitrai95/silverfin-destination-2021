@@ -2,6 +2,7 @@
 
 .destPieChart{
   position: relative;
+  overflow: hidden!important;
   padding: 0px 0px 300px 0px;
 
   @include media-breakpoint-up-sm{
@@ -38,6 +39,17 @@
     }
   }
 
+  &__graphic{
+    min-height: 300px;
+    @include flex-align;
+    @include media-breakpoint-up-xl{
+      min-height: 607px;
+    }
+    svg{
+      max-height: 607px;
+    }
+  }
+
 
 
   &__bg{
@@ -48,17 +60,15 @@
     bottom: 0;
 
     &--1{
-      right: 1px;
-      top: 0;
-      height: 847px;
-      width: 86px;
-      @include media-breakpoint-up-sm{
-        height: 905px;
-        width: 130px;
-      }
+      display: none;
       @include media-breakpoint-up-xl{
+        right: 0;
+        display: block;
         height: 1100px;
         width: 244px;
+      }
+      @include media-breakpoint-up-xxl{
+        right: -2px;
       }
     }
 
@@ -78,17 +88,26 @@
     }
 
     &--3{
-      right: -24px;
+      right: -48px;
       bottom: -18px;
-      height: 230px;
+      height: 210px;
       width: 290px;
       @include media-breakpoint-up-sm{
         height: 320px;
         width: 397px;
       }
+      @include media-breakpoint-up-md{
+        bottom: -26px;
+      }
       @include media-breakpoint-up-xl{
         height: 411px;
         width: 635px;
+        bottom: -32px;
+      }
+      @include media-breakpoint-up-xxl{
+        height: 435px;
+        bottom: -34px;
+        right: -18px;
       }
     }
 
