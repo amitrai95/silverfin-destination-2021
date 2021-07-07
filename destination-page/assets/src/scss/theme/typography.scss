@@ -17,10 +17,16 @@ h2{
   @include fluid-type(40px, 55px);
   @include fluid-line-height(48px, 66px);
 
+  &.display--1{
+    @include fluid-type(30px, 55px);
+    @include fluid-line-height(40px, 66px);
+  }
+
   &.display--2{
     @include fluid-type(35px, 35px);
     @include fluid-line-height(42px, 42px);
   }
+
 }
 
 h3, h3 *{

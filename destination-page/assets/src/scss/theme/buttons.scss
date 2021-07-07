@@ -55,20 +55,25 @@
   &--play{
     background-color: $light-blue;
     position: relative;
-    @include media-breakpoint-up-xl{
-      padding: 23.1px 28.6px 23.1px 85px;
-    }
+    padding: 23.1px 28.6px 23.1px 85px;
+
     &:after{
       @include pseudo;
       background-image: url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/other/play-icon.svg');
       background-repeat: no-repeat;
+      background-size: contain;
       left: 27.6px;
-      height: 37px;
-      width: 37px;
+      height: 36px;
+      width: 36px;
+      transform: translate(0px, -50%);
+      top: 50%;
     }
     &:hover{
       background-color: $navy;
       color: $white;
+      &:after{
+        background-image: url('https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/other/play-active.svg');
+      }
     }
   }
 

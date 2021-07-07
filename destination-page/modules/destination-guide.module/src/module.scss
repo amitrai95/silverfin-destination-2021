@@ -1,12 +1,10 @@
 @import "destination-page/assets/src/scss/config.scss";
 
 .destGuide{
-  padding: 62px 0px 265px 0px;
+  padding: 62px 0px 350px 0px;
   position: relative;
   overflow: hidden;
-  @include media-breakpoint-up-sm{
-    padding: 62px 0px 300px 0px;
-  }
+
   @include media-breakpoint-up-md{
     padding: 62px 0px 475px 0px;
   }
@@ -19,6 +17,31 @@
 
   &__intro{
     visibility: hidden;
+  }
+
+  &__standfirst{
+    max-width: 675px;
+    @include mx-auto;
+  }
+
+  &__guide{
+    margin-top: 29px;
+    visibility: hidden;
+  }
+
+  &__avatar{
+    margin-bottom: 15px;
+  }
+
+  &__button{
+    visibility: hidden;
+    margin-top: 40px;
+  }
+
+  &__wista{
+    .wistia_click_to_play{
+      width: 100%!important;
+    }
   }
 
   &__bg{
