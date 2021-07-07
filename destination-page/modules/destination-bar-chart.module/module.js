@@ -1,1 +1,1 @@
-$(function(){});
+$(function(){var e=document.getElementById("destBarChart__bodymovin"),o=bodymovin.loadAnimation({container:e,path:"/hubfs/Tomorrow%20People/destination-page/json/bar-chart/bar-chart.json",renderer:"svg",loop:!1,autoplay:!1,rendererSettings:{progressiveLoad:!1},name:"barChart_anim",resizeMode:"cover"});new Waypoint({element:e,handler:function(e){o.play()},offset:"60%"})});

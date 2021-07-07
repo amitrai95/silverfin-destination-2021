@@ -38,9 +38,9 @@ $(function() {
   });
 
 
-  var bar_chart_anim;
+  var pie_chart_anim;
   var elem = document.getElementById('destPieChart__bodymovin');
-  var barChart_settings = {
+  var pieChart_settings = {
     container: elem,
     path: '/hubfs/Tomorrow%20People/destination-page/json/pie-chart/pie-chart.json',
     renderer: 'svg',
@@ -49,16 +49,16 @@ $(function() {
     rendererSettings: {
       progressiveLoad:false
     },
-    name: "barChart_anim",
+    name: "pieChart_anim",
     resizeMode: 'cover'
   };
 
-  bar_chart_anim = bodymovin.loadAnimation(barChart_settings);
+  pie_chart_anim = bodymovin.loadAnimation(pieChart_settings);
 
   var waypoint = new Waypoint({
     element: elem,
     handler: function(direction) {
-    bar_chart_anim.play();   /*THIS IS WHERE WE PLAY THE ANIMATION*/
+    pie_chart_anim.play();   /*THIS IS WHERE WE PLAY THE ANIMATION*/
    },
    offset: '60%' /* string defined in waypoint.js See documentation for more presets */
   })

@@ -3,7 +3,11 @@
 
 .destBarChart{
   position: relative;
+  overflow: hidden!important;
   padding: 166px 0px;
+  @include media-breakpoint-up-xl{
+    padding: 160px 0px 650px 0px;
+  }
 
 
   &__standfirst{
@@ -17,9 +21,13 @@
   }
 
 
-  &__lottie{
-    #animation-container{
-      height: 560px;
+  &__graphic{
+
+    @include media-breakpoint-up-xl{
+      min-height: 560px;
+    }
+    svg{
+      max-height: 560px;
     }
   }
 

@@ -11,25 +11,6 @@
     "default" : 3
   },
   "children" : [ {
-    "id" : "03d7ecd4-3d31-730d-cb7e-0cbc59173912",
-    "name" : "image",
-    "label" : "Image",
-    "required" : false,
-    "locked" : false,
-    "children" : [ {
-      "picker" : "file",
-      "id" : "2688d111-8068-949d-1ce3-5d57d8f0e25b",
-      "name" : "json",
-      "label" : "JSON",
-      "required" : true,
-      "locked" : false,
-      "type" : "file"
-    } ],
-    "tab" : "CONTENT",
-    "expanded" : false,
-    "type" : "group",
-    "default" : { }
-  }, {
     "id" : "0962c3b3-5684-1e45-4c38-7052c7f57885",
     "name" : "copy",
     "label" : "Copy",
@@ -92,14 +73,6 @@
   "expanded" : false,
   "type" : "group",
   "default" : [ {
-    "image" : {
-      "image" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
-    },
     "copy" : { },
     "cta_button" : {
       "cta_text" : "Get the full report",
@@ -114,14 +87,6 @@
       }
     }
   }, {
-    "image" : {
-      "image" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
-    },
     "copy" : { },
     "cta_button" : {
       "cta_text" : "Get the full report",
@@ -136,14 +101,6 @@
       }
     }
   }, {
-    "image" : {
-      "image" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
-    },
     "copy" : { },
     "cta_button" : {
       "cta_text" : "Get the full report",

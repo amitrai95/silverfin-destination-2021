@@ -11,13 +11,8 @@
           {% endif %}
 
           <div class="col-12 col-lg-5">
-            <div class="destPinned__graphic">
-              <lottie-player class="destPinned__player"
-                src="{{ item.image.json }}"
-                background="transparent"
-                speed="1"
-               autoplay >
-              </lottie-player>
+            <div id="{% cycle 'destPinned__anim--1','destPinned__anim--2','destPinned__anim--3' %}" class="destPinned__graphic">
+              <!-- lottie -->
             </div>
           </div>
 
