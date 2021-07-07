@@ -10,6 +10,10 @@
     "name" : "scroll-reveal.js"
   }, {
     "autoload" : true,
+    "path" : "../../assets/build/js/lib/waypoints-min.js",
+    "name" : "waypoints-min.js"
+  }, {
+    "autoload" : true,
     "path" : "../../assets/build/js/dist/scripts-min.js",
     "name" : "scripts-min.js"
   } ],
