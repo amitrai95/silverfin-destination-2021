@@ -5,9 +5,7 @@
 
   &__slide{
     overflow: hidden;
-    @include flex-align;
     height: 100vh;
-    min-height: 1080px;
     width: 100vw;
     position: -webkit-sticky;
     position: -moz-sticky;
@@ -21,10 +19,13 @@
       url(https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pinned/pinned-bottom-left.svg),
       url(https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pinned/pinned-bottom-center.svg),
       url(https://www.silverfin.com/hubfs/Tomorrow%20People/destination-page/vectors/destination-pinned/pinned-bottom-right.svg);
-    background-position: center top, right top, bottom left, bottom center, bottom right;
+    background-position: 39% top, right top, bottom left, bottom center, bottom right;
+    background-size: 80px, 40px, 75px, 0px, 80px;
     background-repeat: no-repeat;
+    padding-top: 60px;
 
     @include media-breakpoint-up-xl{
+      @include flex-align;
       min-height: 800px;
     }
 
@@ -43,7 +44,10 @@
   }
 
   &__header{
-    margin: 36px 0px;
+    margin: 20px 0px;
+    @include media-breakpoint-up-xl{
+      margin: 36px 0px;
+    }
   }
 
   &__cta{

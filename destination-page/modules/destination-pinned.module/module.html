@@ -5,7 +5,7 @@
         <div class="row flex-column-reverse flex-lg-row justify-content-center align-items-center">
 
           {% if item.cta_button.cta_text %}
-            <div class="destPinned__cta d-flex d-lg-none">
+            <div class="destPinned__cta d-flex justify-content-center d-lg-none">
               <a href="#" class="button button--secondary destModal--open">{{ item.cta_button.cta_text|trim }}</a>
             </div>
           {% endif %}
@@ -19,7 +19,7 @@
           <div class="col-12 col-lg-6 offset-xl-1 col-xl-5">
             <div class="destPinned__body text-center text-lg-left">
               <p class="destPinned__counter color--lightBlue mb-0">0{{ loop.index }}</p>
-              <h2 class="destPinned__header color--white">{{ item.copy.header|trim }}</h2>
+              <h2 class="destPinned__header color--white display--1">{{ item.copy.header|trim }}</h2>
               {% if item.copy.standfirst %}
                 <p class="destPinned__standfirst color--lightBlue">{{ item.copy.standfirst|trim }}</p>
               {% endif %}
