@@ -3,6 +3,7 @@
 
 .destCTABanner{
   padding: 120px 0px;
+  overflow: hidden!important;
   @include media-breakpoint-up-sm{
     padding: 131px 65px;
   }
@@ -20,6 +21,14 @@
     margin-top: 62px;
     @include media-breakpoint-up-xl{
       margin-top: 85px;
+    }
+  }
+
+  &__copy,
+  &__cta{
+    visibility: hidden;
+    @include ie-only{
+      visibility: visible;
     }
   }
 

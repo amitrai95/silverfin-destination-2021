@@ -15,8 +15,13 @@
     padding: 28px 0px 730px 0px;
   }
 
-  &__intro{
+  &__intro,
+  &__guide,
+  &__button{
     visibility: hidden;
+    @include ie-only{
+      visibility: visible;
+    }
   }
 
   &__standfirst{
@@ -26,7 +31,6 @@
 
   &__guide{
     margin-top: 29px;
-    visibility: hidden;
   }
 
   &__avatar{
@@ -34,7 +38,6 @@
   }
 
   &__button{
-    visibility: hidden;
     margin-top: 40px;
   }
 
@@ -50,6 +53,10 @@
     visibility: hidden;
     position: absolute;
     bottom: 0;
+
+    @include ie-only{
+      visibility: visible;
+    }
 
     &--1{
       display: none;

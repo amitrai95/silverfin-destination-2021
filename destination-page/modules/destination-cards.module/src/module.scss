@@ -14,12 +14,19 @@
     padding-top: 0;
     padding-bottom: 534px;
   }
+  @media(min-width: 1366px){
+    padding-bottom: 500px;
+  }
   @include media-breakpoint-up-xxl{
     padding-bottom: 552px;
   }
 
   &__intro{
     margin-bottom: 17px;
+    visibility: hidden;
+    @include ie-only{
+      visibility: visible;
+    }
   }
 
   &__header{
@@ -42,6 +49,11 @@
   .destCard{
     position: relative;
     z-index: 10;
+
+    @include ie-only{
+      visibility: visible;
+    }
+    
     @include media-breakpoint-up-xl{
       margin-bottom: 41px;
     }
@@ -99,6 +111,10 @@
     position: absolute;
     bottom: 0;
 
+    @include ie-only{
+      visibility: visible;
+    }
+
     &--1{
       left: -1px;
       top: 0;
@@ -112,6 +128,7 @@
         height: 802px;
         width: 212px;
         top: -3px;
+        left: -3px;
       }
       @include media-breakpoint-up-xxl{
         height: 909.42px;
@@ -164,9 +181,16 @@
         bottom: 5px;
       }
       @include media-breakpoint-up-xl{
-        bottom: 0px;
-        height: 534px;
+        right: -71px;
+        bottom: 10px;
+        height: 504px;
         width: 770px;
+      }
+      @media(min-width: 1366px){
+        right: -5px;
+        bottom: -30px;
+        height: 536px;
+        width: 775px;
       }
       @include media-breakpoint-up-xxl{
         bottom: -135px;
@@ -174,7 +198,8 @@
         width: calc(100% - 563px);
       }
       @include media-breakpoint-up-xxxl{
-        bottom: -135px;
+        bottom: -134px;
+        width: calc(100% - 561px);
         right: -3px;
       }
     }

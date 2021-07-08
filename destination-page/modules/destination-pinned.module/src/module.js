@@ -14,6 +14,13 @@ $(function() {
     duration: 1200
   });
 
+  sr.reveal('.destPinned__cta', {
+    origin: 'bottom',
+    distance: '100px',
+    duration: 1800,
+    delay: 800
+  });
+
 
   /* pinned 1 */
 

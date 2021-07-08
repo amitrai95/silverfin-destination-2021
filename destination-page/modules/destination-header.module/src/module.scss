@@ -31,6 +31,9 @@
   &__branding,
   &__cta{
     visibility: hidden;
+    @include ie-only{
+      visibility: visible;
+    }
   }
 
 }

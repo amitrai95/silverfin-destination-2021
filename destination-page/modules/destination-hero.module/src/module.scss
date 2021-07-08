@@ -16,6 +16,9 @@
 
   &__intro{
     visibility: hidden;
+    @include ie-only{
+      visibility: visible;
+    }
   }
 
   &__standfirst{
@@ -33,6 +36,10 @@
     visibility: hidden;
     position: absolute;
     bottom: 0;
+
+    @include ie-only{
+      visibility: visible;
+    }
 
     &--1{
       display: none;

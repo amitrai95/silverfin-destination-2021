@@ -13,6 +13,13 @@
     padding: 60px 0px 405px 0px;
   }
 
+  &__intro{
+    visibility: hidden;
+    @include ie-only{
+      visibility: visible;
+    }
+  }
+
 
   &__cards{
     @include flex-align;
@@ -28,10 +35,6 @@
     @include media-breakpoint-up-xl{
       margin-top: 173px;
     }
-  }
-
-  &__intro{
-    visibility: hidden;
   }
 
 
@@ -60,6 +63,10 @@
     visibility: hidden;
     position: absolute;
     bottom: 0;
+
+    @include ie-only{
+      visibility: visible;
+    }
 
     &--1{
       height: 380px;

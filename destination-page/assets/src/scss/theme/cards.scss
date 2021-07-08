@@ -11,6 +11,11 @@
   visibility: hidden;
   padding: 20px 28px;
   @include mx-auto;
+
+  @include ie-only{
+    visibility: visible;
+  }
+  
   @include media-breakpoint-up-sm{
     width: 45%;
     min-height: 170px;
