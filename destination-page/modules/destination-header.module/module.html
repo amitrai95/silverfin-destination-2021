@@ -6,14 +6,16 @@
 
           <div class="destHeader__branding">
             {% if module.branding.logo.src %}
-            	{% set sizeAttrs = 'width="{{ module.branding.logo.width }}" height="{{ module.branding.logo.height }}"' %}
-            	{% if module.branding.logo.size_type == 'auto' %}
-            		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-            	{% elif module.branding.logo.size_type == 'auto_custom_max' %}
-            		{% set sizeAttrs = 'width="{{ module.branding.logo.max_width }}" height="{{ module.branding.logo.max_height }}" style="max-width: 100%; height: auto;"' %}
-            	{% endif %}
-            	 {% set loadingAttr = module.branding.logo.loading != 'disabled' ? 'loading="{{ module.branding.logo.loading }}"' : '' %}
-            	<img class="destHeader__logo" loading="lazy" src="{{ module.branding.logo.src }}" alt="{{ module.branding.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              <a href="/">
+              	{% set sizeAttrs = 'width="{{ module.branding.logo.width }}" height="{{ module.branding.logo.height }}"' %}
+              	{% if module.branding.logo.size_type == 'auto' %}
+              		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              	{% elif module.branding.logo.size_type == 'auto_custom_max' %}
+              		{% set sizeAttrs = 'width="{{ module.branding.logo.max_width }}" height="{{ module.branding.logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+              	{% endif %}
+              	 {% set loadingAttr = module.branding.logo.loading != 'disabled' ? 'loading="{{ module.branding.logo.loading }}"' : '' %}
+              	<img class="destHeader__logo" loading="lazy" src="{{ module.branding.logo.src }}" alt="{{ module.branding.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              </a> 
             {% endif %}
           </div>
 

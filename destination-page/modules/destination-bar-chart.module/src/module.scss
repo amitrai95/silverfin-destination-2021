@@ -40,8 +40,10 @@
       min-height: 560px;
     }
     svg{
-      max-height: 560px;
-      min-height: 560px;
+      @include media-breakpoint-up-xl{
+        max-height: 560px;
+        min-height: 560px;
+      }
     }
   }
 

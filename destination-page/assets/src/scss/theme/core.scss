@@ -14,7 +14,7 @@ body{
 a{
   @include transition;
 }
-
+body,
 section{
   overflow-x: hidden;
 }

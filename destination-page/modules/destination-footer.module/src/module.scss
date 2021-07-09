@@ -1,47 +1,48 @@
 @import "destination-page/assets/src/scss/config.scss";
 
+.footer{
+  overflow: hidden;
+}
+
 .destModal{
   max-width: 600px;
   width: 100%;
   @include mx-auto;
   display: none;
   position: fixed;
-  top: 50%;
   left: 50%;
+  top: 0;
   z-index: 9999;
   @include border-radius(5px);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
+  @include media-breakpoint-up-md{
+    top: 20px;
+  }
 
   &.active{
     display: flex;
   }
 
   &__inner{
-    padding: 35px 30px;
+    padding: 35px 30px 100px 30px;
     background-color: $white;
     @include border-radius(5px);
-    max-height: 850px;
+    height: 100vh;
+    max-height: 700px;
     display: flex;
     overflow: scroll;
     flex-direction: column;
     @include media-breakpoint-up-xl{
       padding: 35px 42px 73px 42px;
-      max-height: 800px;
       margin: 15px;
-    }
-    @include media-breakpoint-up-xxl{
-      max-height: 750px;
     }
   }
 
   &__close{
-    margin: 60px 0px 20px 15px;
+    margin: 10px 0px 20px 15px;
     @include flex-align($justify: flex-end);
-    @include media-breakpoint-up-sm{
-      margin-top: 0;
-    }
   }
 
   &__icon{
@@ -77,6 +78,7 @@
 
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     select{
       background-color: $medium-grey;
       border: 0;

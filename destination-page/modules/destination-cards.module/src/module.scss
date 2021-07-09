@@ -34,7 +34,7 @@
   }
 
   &__standfirst{
-    max-width: 530px;
+    max-width: 580px;
     @include mx-auto;
   }
 
@@ -53,7 +53,7 @@
     @include ie-only{
       visibility: visible;
     }
-    
+
     @include media-breakpoint-up-xl{
       margin-bottom: 41px;
     }
@@ -198,9 +198,9 @@
         width: calc(100% - 563px);
       }
       @include media-breakpoint-up-xxxl{
-        bottom: -134px;
+        bottom: -87px;
         width: calc(100% - 561px);
-        right: -3px;
+        right: -5px;
       }
     }
 

@@ -65,6 +65,8 @@ ul.reset-list{
 
 .flex-align{
   @include flex-align;
+  position: relative;
+  z-index: 99;
 }
 
 .visibility-hidden{
@@ -94,4 +96,10 @@ ul.reset-list{
 
 .cera-bold{
   @include cera-bold;
+}
+
+.prevent-scroll{
+  overflow-y: hidden!important;
+  height: 100%;
+  width: 100%;
 }

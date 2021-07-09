@@ -30,6 +30,30 @@
       "gotowebinar_webinar_key" : null,
       "form_type" : "HUBSPOT"
     }
+  }, {
+    "id" : "06411a93-56cb-b1ee-ff67-4a54a070fd03",
+    "name" : "send_follow_up_email",
+    "label" : "Send follow up email?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "3e261465-5bab-8785-f728-bc0382d6fc36",
+    "name" : "email_id",
+    "label" : "Followup email",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "06411a93-56cb-b1ee-ff67-4a54a070fd03",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "followupemail",
+    "default" : 48312396672
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -42,6 +66,8 @@
       "message" : "Thank for downloading!",
       "gotowebinar_webinar_key" : null,
       "form_type" : "HUBSPOT"
-    }
+    },
+    "send_follow_up_email" : true,
+    "email_id" : 48312396672
   }
 } ]

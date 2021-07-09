@@ -7,12 +7,12 @@ $(function() {
   $(openModal).click(function(e){
     e.preventDefault();
     $(modal).addClass("active");
-    $("body").addClass("overlay overlay--grey");
+    $("body").addClass("overlay overlay--grey prevent-scroll");
   });
 
   $(closeModal).click(function(){
     $(modal).removeClass("active");
-    $("body").removeClass("overlay overlay--grey")
+    $("body").removeClass("overlay overlay--grey prevent-scroll")
   });
 
 });
