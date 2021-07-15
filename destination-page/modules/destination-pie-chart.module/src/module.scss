@@ -28,6 +28,9 @@
   &__standfirst{
     max-width: 700px;
     @include mx-auto;
+    @include media-breakpoint-up-xxl{
+      max-width: 750px;
+    }
   }
 
   &__subheader{

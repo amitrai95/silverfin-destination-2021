@@ -27,6 +27,9 @@
   &__standfirst{
     max-width: 675px;
     @include mx-auto;
+    @include media-breakpoint-up-xxl{
+      max-width: 725px;
+    }
   }
 
   &__guide{
